@@ -1,0 +1,7 @@
+services:
+- type: cron
+  name: pelosi-trade-alert
+  env: python
+  schedule: "*/60 * * * *"
+  buildCommand: ""
+  startCommand: "python main.py"
